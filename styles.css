@@ -1,0 +1,356 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* *********************************************************************************************************** */
+
+/* FONTS */
+/* 
+    font-family: 'Catamaran', sans-serif;
+
+    font-family: 'Kanit', sans-serif;
+
+    font-family: 'Lato', sans-serif;
+
+    font-family: 'Roboto', sans-serif;
+*/
+
+/* COLOURS */
+
+:root {
+  --scarlet: #BA0621;
+  --lipstick: #CC1D36;
+  --very-dark-brown: #0B0101;
+  --wine-red: #6C0918;
+}
+
+/* GLOBAL  */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.8rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* ------------------------ HEADER -------------------------- */
+
+.header {
+    background-image: url(./assets/image-1@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    position: relative;
+}
+
+
+
+/* Unordered list holding the title  */
+.header__nav-title {
+    font-family: 'Kanit', sans-serif;
+    font-size: 2rem;
+    line-height: 29px;
+    float: left;
+    width: 60%;
+}
+
+/* Unordered List holding the page links */
+.header__nav-page {
+    float: left;
+    width: 40%;
+    text-align: right;
+}
+
+.header__list--title {
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+/* List items within nav-page */
+.header__list--page {
+    float: left;
+    width: 25%;
+}
+
+/* Anchor tags within list items */
+.header__link {
+    color: white;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 600;
+    line-height: 29px;
+    display: inline-block;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+/* Heading  */
+
+.header__heading {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 11.62rem;
+    color: var(--lipstick);
+    line-height: 97px;
+    letter-spacing: 1px;
+}
+
+.header__subheading {
+    font-family: 'Lato', sans-serif;
+    line-height: 31.6px;
+    letter-spacing: 0.3px;
+    text-transform: lowercase;
+}
+
+.header__heading-container {
+    position: absolute;
+    bottom: 10%;
+}
+
+/* Social Media Nav  */
+
+.header__side-nav {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+}
+
+.header__icon {
+    padding: 10px;
+}
+
+
+
+/* -------------- BLOG ----------------------- */
+
+
+/* Blog Heading  */
+.blog__heading {
+    font-family: 'Kanit', sans-serif;
+    font-size: 4.2rem;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 43px;
+    text-transform: uppercase;
+}
+
+.blog__heading--top {
+    margin: 75px 0;
+    text-align: center;
+}
+
+.blog__list {
+    float: left;
+    width: calc((100% / 3) - 15px);
+}
+
+.blog__list:nth-child(1) {
+    margin-right: 15px;
+}
+
+.blog__list:nth-child(2) {
+    margin: 0 7.5px;
+}
+
+.blog__list:nth-child(3) {
+    margin-left: 15px;
+}
+
+/* Blog Articles  */
+
+.blog__button {
+    font-family: 'Kanit', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 29px;
+    color: white;
+    background: var(--scarlet);
+    padding: 5px 15px;
+    border: none;
+    text-transform: uppercase;
+}
+
+/* Article One  */
+
+.blog__article-one {
+    margin: 80px 0 0 0;
+}
+
+.blog__img-container--one {
+    float: left;
+    width: 25%;
+}
+
+.blog__text-container--one {
+    float: left;
+    width: 75%;
+    padding-left: 30px;
+}
+
+.blog__heading--one {
+
+}
+
+.blog__para--one {
+    line-height: 25px;
+    margin: 10px 0 60px 0;
+}
+
+.blog__button--one {
+    vertical-align: bottom;
+}
+
+/* Article Two  */
+
+.blog__article-two {
+    margin: 100px 0 0 0;
+}
+
+.blog__text-container--two {
+    float: left;
+    width: 50%;
+}
+
+.blog__para--two {
+    padding: 10px 30px 10px 0;
+}
+
+.blog__img-container--two {
+    float: left;
+    width: 50%;
+}
+
+/* Article Three  */
+
+.blog__text-container--three {
+    float: left;
+    width: 50%;
+}
+
+.blog__img-container--three {
+    float: left;
+    width: 50%;
+}
+
+/* --------------- MAIN NAV -------------------------- */
+
+.main-nav {
+    background-image: url(./assets/oscar-aguilar-327500-unsplash@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 47vh;
+}
+
+.main-nav__list {
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+
+.main-nav__icon {
+    color: var(--scarlet);
+    display: block;
+    font-size: 4rem;
+    margin: 0 0 10px 0;
+}
+
+.main-nav__link {
+    font-family: 'Kanit', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 29px;
+    color: white;  
+    display: block;
+}
+
+
+
+/* ---------- FOOTER ---------------  */
+.footer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    color: white;
+    line-height: 29px;
+    background-color: var(--wine-red);
+}
+
+.footer__info {
+    height: 47vh;
+}
+
+.footer__heading {
+    font-family: 'Kanit', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 29px;
+}
+
+.footer__list {
+    float: left;
+    width: 30%;
+}
+
+.footer__list--contact {
+    /* text-align: center; */
+}
+
+.footer__list--nav {
+    text-align: right;
+}
+
+.footer__link {
+    font-family: 'Kanit', sans-serif;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 29px;
+}
+
+.footer__copyright {
+    background: var(--very-dark-brown);
+    height: 6vh;
+    text-align: center;
+}
