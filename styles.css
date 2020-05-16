@@ -275,7 +275,7 @@ a {
 
 }
 
-.blog__text-padding--two {
+.blog__text-subcontainer--two {
     padding: 60px;
 }
 
@@ -311,7 +311,7 @@ a {
     /* padding: 115px 150px 0 90px; */
 }
 
-.blog__text-padding--three {
+.blog__text-subcontainer--three {
     padding: 60px;
 }
 
@@ -437,18 +437,41 @@ a {
     line-height: 29px;
 }
 
-.footer__copyright {
+.copyright__container {
     background: var(--very-dark-brown);
     height: 6vh;
     text-align: center;
+    position: relative;
+}
+
+.copyright__para {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @media (max-width: 1350px) {
-    /* Blog Article 1 */
+    /* Blog */
+
+    .blog__heading {
+        font-size: 3rem;
+    }
+
+    .blog__para {
+        font-size: 1.6rem;
+    }
+
+    .blog__button {
+        font-size: 1.8rem;
+    }
 
     .blog__para--one {
-        font-size: 1.6rem;
         margin-bottom: 0;
+    }
+
+    .blog__text-subcontainer {
+        padding: 0 60px;
     }
 
 }
@@ -456,7 +479,7 @@ a {
 @media (max-width: 1105px) {
     .blog__img-container--one {
         float: none;
-        width: 50%;
+        width: 60%;
         margin: 0 auto;
     }
 
@@ -464,10 +487,55 @@ a {
         float: none;
         position: static;
         margin: 0 auto;
-        width: 50%;
+        width: 60%;
     }
 
     .blog__text-subContainer--one {
         padding: 0;
     }
+}
+
+@media (max-width: 950px) {
+    
+
+
+    /* This wrapper has been inactive until this breakpoint */
+    .blog__wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .blog__text-container--two, 
+    .blog__text-container--three,
+    .blog__img-container--two,
+    .blog__img-container--three {
+        float: none;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .blog__text-container--two, 
+    .blog__text-container--three {
+        position: static;
+        text-align: center;
+    }
+    
+    .footer__input--email {
+        padding: 8px;
+    }
+
+    .footer__contact-info {
+        display: block;
+    }
+}
+
+@media (max-width: 650px) {
+    .blog__text-container--two, 
+    .blog__text-container--three,
+    .blog__img-container--two,
+    .blog__img-container--three {
+        width: 100%;
+    }
+
 }
