@@ -82,9 +82,12 @@ a {
     position: relative;
 }
 
+/* This is a nav which holds two unordered lists: nav-title and nav-page */
+.header__top-nav {
+    
+}
 
-
-/* Unordered list holding the title  */
+/* Unordered list holding the navigation title on the left  */
 .header__nav-title {
     font-family: 'Kanit', sans-serif;
     font-size: 2rem;
@@ -93,16 +96,16 @@ a {
     width: 60%;
 }
 
+.header__list--title {
+    text-transform: uppercase;
+    padding: 20px;
+}
+
 /* Unordered List holding the page links */
 .header__nav-page {
     float: left;
     width: 40%;
     text-align: right;
-}
-
-.header__list--title {
-    text-transform: uppercase;
-    padding: 20px;
 }
 
 /* List items within nav-page */
@@ -124,6 +127,11 @@ a {
 
 /* Heading  */
 
+.header__heading-container {
+    position: absolute;
+    bottom: 10%;
+}
+
 .header__heading {
     font-family: 'Kanit', sans-serif;
     font-weight: bold;
@@ -141,10 +149,6 @@ a {
     text-transform: lowercase;
 }
 
-.header__heading-container {
-    position: absolute;
-    bottom: 10%;
-}
 
 /* Social Media Nav  */
 
@@ -214,6 +218,8 @@ a {
 
 .blog__article-one {
     margin: 80px 0 0 0;
+    position: relative;
+    overflow: hidden;
 }
 
 .blog__img-container--one {
@@ -222,9 +228,17 @@ a {
 }
 
 .blog__text-container--one {
-    float: left;
+    float: right;
     width: 75%;
-    padding-left: 30px;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    /* padding-left: 30px; */
+}
+
+.blog__text-subContainer--one {
+    padding: 0 0 0 30px;
 }
 
 .blog__heading--one {
@@ -240,11 +254,14 @@ a {
 
 }
 
+/* https://stackoverflow.com/questions/4804581/css-expand-float-child-div-height-to-parents-height */
+
 /* Article Two  */
 
 .blog__article-two {
     margin: 100px 0 0 0;
     position: relative;
+    overflow: hidden;
 }
 
 
@@ -252,14 +269,20 @@ a {
     float: left;
     width: 50%;
     position: absolute;
-    top: 120px;
-    left: 165px;
-    padding: 0 220px 0 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* padding: 120px 30px 0 170px; */
 
+}
+
+.blog__text-padding--two {
+    padding: 60px;
 }
 
 .blog__para--two {
     padding: 10px 30px 10px 0;
+    line-height: 25px;
 }
 
 .blog__img-container--two {
@@ -271,6 +294,7 @@ a {
 
 .blog__article-three {
     position: relative;
+    overflow: hidden;
 }
 
 .blog__img-container--three {
@@ -281,14 +305,20 @@ a {
 .blog__text-container--three {
     float: right;
     width: 50%;
+    height: 100%;
     position: absolute;
-    right: -80px;
-    top: 90px;
-    padding: 0 170px 0 0;
+    top: 0;
+    right: 0;
+    /* padding: 115px 150px 0 90px; */
+}
+
+.blog__text-padding--three {
+    padding: 60px;
 }
 
 .blog__para--three {
     padding: 10px 0;
+    line-height: 25px;
 }
 
 
@@ -304,15 +334,13 @@ a {
 }
 
 .main-nav__list-container {
-    margin: auto;
+    padding: 120px 0 0 0;
 }
 
 .main-nav__list {
     float: left;
     width: 33%;
     text-align: center;
-    /* height: 47vh; */
-    /* margin: auto 0; */
 }
 
 .main-nav__icon {
@@ -352,19 +380,53 @@ a {
     font-weight: bold;
     font-style: italic;
     line-height: 29px;
+    text-transform: uppercase;
 }
 
 .footer__list {
     float: left;
-    width: 30%;
+    margin: 45px 0 0 0;
+    /* width: 30%; */
+}
+
+.footer__list--email {
+    width: 60%;
+}
+
+.footer__para--email {
+    margin: 5px 0;
+}
+
+.footer__input--email {
+    padding: 8px 270px 8px 8px;
+    margin-right: -4px;
+    border: none;
+}
+
+.footer__button--email {
+    padding: 8px 20px;
+    border: none;
+    background: var(--very-dark-brown);
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    text-transform: uppercase;
 }
 
 .footer__list--contact {
-    /* text-align: center; */
+    width: 30%;
+}
+
+.footer__heading--contact {
+    margin: 0 0 5px 0;
+}
+
+.footer__para--contact {
+    line-height: 25px;
 }
 
 .footer__list--nav {
     text-align: right;
+    width: 10%;
 }
 
 .footer__link {
