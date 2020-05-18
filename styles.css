@@ -10,6 +10,10 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 /* *********************************************************************************************************** */
 
+/* NOTES 
+This was my first time trying BEM on a larger project.  Any feedback on my naming conventions would be much appreciated!  
+*/
+
 /* FONTS */
 /* 
     font-family: 'Catamaran', sans-serif;
@@ -176,9 +180,9 @@ a {
     padding: 6px;
 }
 
+/* ------------------  MAIN ----------------------------------- */
 
-
-/* -------------- BLOG ----------------------- */
+/* ------------ BLOG ---------------- */
 
 
 /* Blog Heading  */
@@ -275,6 +279,7 @@ a {
 }
 
 /* https://stackoverflow.com/questions/4804581/css-expand-float-child-div-height-to-parents-height */
+/* This Stack Overflow thread provided me guidance for making two floated elements the same height as their parent. */
 
 /* Article Two  */
 
@@ -292,8 +297,6 @@ a {
     height: 100%;
     top: 0;
     left: 0;
-    /* padding: 120px 30px 0 170px; */
-
 }
 
 .blog__text-subcontainer--two {
@@ -329,7 +332,6 @@ a {
     position: absolute;
     top: 0;
     right: 0;
-    /* padding: 115px 150px 0 90px; */
 }
 
 .blog__text-subcontainer--three {
@@ -343,17 +345,13 @@ a {
 
 
 
-/* --------------- MAIN NAV -------------------------- */
+/* --------------- MAIN NAV ------------------ */
 
 .main-nav {
     background-image: url(./assets/oscar-aguilar-327500-unsplash@2x.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
-
-.main-nav__list-container {
-    /* padding: 120px 0 0 0; */
 }
 
 .main-nav__list {
@@ -379,14 +377,16 @@ a {
     display: block;
 }
 
-.main-nav__link:hover,
+
+.main-nav__list:hover .main-nav__link,
 .main-nav__link:focus {
     opacity: 0.5;
 }
 
 
+/* ---------------------- FOOTER ----------------------------------  */
 
-/* ---------- FOOTER ---------------  */
+/* ------------ INFO SECTION ------------- */
 .footer {
     font-family: 'Roboto', sans-serif;
     font-size: 1.8rem;
@@ -473,6 +473,8 @@ a {
     opacity: 0.5;
 }
 
+/* ------ COPYRIGHT SECTION ------- */
+
 .copyright__container {
     background: var(--very-dark-brown);
     height: 6vh;
@@ -488,8 +490,9 @@ a {
     width: 100%;
 }
 
+/* ----------------- MEDIA QUERIES ------------------------- */
+
 @media (max-width: 1350px) {
-    /* Blog */
 
     .blog__para {
         font-size: 1.6rem;
@@ -658,8 +661,6 @@ a {
     .blog__img-container--three {
         width: 100%;
     }
-
-    /* Footer  */
 
     .footer__info {
         height: auto;

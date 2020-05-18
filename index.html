@@ -22,16 +22,16 @@
           <!-- Top Navigation  -->
           <ul class="header__nav-page clearfix">
             <li class="header__list header__list--page">
-              <a class="header__link" href="">Home</a>
+              <a class="header__link" href="#">Home</a>
             </li>
             <li class="header__list header__list--page">
-              <a class="header__link" href="">About</a>
+              <a class="header__link" href="#">About</a>
             </li>
             <li class="header__list header__list--page">
-              <a class="header__link" href="">Blog</a>
+              <a class="header__link" href="#">Blog</a>
             </li>
             <li class="header__list header__list--page">
-              <a class="header__link" href="">Contact</a>
+              <a class="header__link" href="#">Contact</a>
             </li>
           </ul>
           <ul class="header__nav-hamburger">
@@ -90,35 +90,35 @@
             <li class="blog__list"><img src="./assets/image-4@2x.png" alt="close-up of the left-rear tail light of a sporty red car"></li>
           </ul>  
         </header>
+
         <!-- Blog 1 -->
         <article class="blog__article-one clearfix">
+          <!-- Blog 1 Img  -->
           <div class="blog__img-container blog__img-container--one">
             <img class="blog__img" src="./assets/image-6@2x.png" alt="front-view of a silver car with a yellow stripe vertically stretching up the hood">
           </div>
+          <!-- Blog 1 Text  -->
           <div class="blog__text-container blog__text-container--one">
             <div class="blog__text-subcontainer--one">
-
               <h2 class="blog__heading blog__heading--one">This Week's Highlight</h2>
               <p class="blog__para blog__para--one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, vero quam esse quaerat est beatae ducimus placeat fugiat debitis optio neque molestiae minima reprehenderit hic dolorem culpa nobis iure odio eos? Aperiam eaque velit nesciunt animi odit dicta veniam officiis dolor? Modi vero distinctio molestias possimus repudiandae odit provident alias, facere iste, molestiae sapiente, deserunt eveniet. Obcaecati expedita odit placeat fuga dolores architecto doloremque eveniet reprehenderit at, ea velit dignissimos reiciendis assumenda mollitia sint soluta culpa quae non itaque molestiae id cumque dolorum veritatis dolore!</p>
               <button class="blog__button blog__button--one">Read More</button>
             </div>
           </div>
-        </article>
+        </article><!--Blog 1 ends-->
       </div> <!-- wrapper ends -->
 
-        <!-- Blog 2 -->
+      <!-- Blog 2 -->
       <div class="blog__wrapper">
-
-      
         <article class="blog__article-two clearfix">
+          <!-- Blog 2 Img  -->
           <div class="blog__img-container blog__img-container--two">
             <img 
               class="blog__img blog__img--two" 
               src="./assets/image-2@2x.png" alt="white sports car with two identical blue stripes stretching over the car"
             >
           </div>
-
-
+          <!-- Blog 2 Text  -->
           <div class="blog__text-container blog__text-container--two">
             <div class="blog__text-subcontainer blog__text-subcontainer--two">
               <div class="blog__heading-container">
@@ -129,13 +129,11 @@
               <button class="blog__button blog__button--two">Read More</button>
             </div>
           </div>
-        
-          
-        </article>
+        </article><!--Blog 2 ends -->
       
         <!-- Blog 3 -->
         <article class="blog__article-three clearfix">
-          <!-- Image Container Three  -->
+          <!-- Blog 3 Img  -->
           <div class="blog__img-container blog__img-container--three">
             <img 
               class="blog__img blog__img--three" 
@@ -143,7 +141,7 @@
               alt="close-up of white sports car in dimly lit warehouse, with other cars faintly visible in the background"
             >
           </div>
-          <!-- Text Container Three  -->
+          <!-- Blog 3 Text  -->
           <div class="blog__text-container blog__text-container--three">
             <div class="blog__text-subcontainer blog__text-subcontainer--three">
               <div class="blog__heading-container">
@@ -154,17 +152,14 @@
               <button class="blog__button blog__button--three">Read More</button>
             </div>
           </div>
-          
-
-        </article>
+        </article><!--Blog 3 Ends-->
       </div>
     </section><!--Blog Ends-->
     
     <!-- MAIN NAV SECTION  -->
+    <!-- (Wasn't sure if this belonged in the footer or not.) -->
     <section class="main-nav">
       <div class="main-nav__list-container wrapper">
-
-        <!-- SHOP Brands, jobs, events -->
         <nav>
           <ul class="clearfix">
             <li class="main-nav__list">
@@ -181,17 +176,18 @@
             </li>
           </ul>
         </nav>
-        
       </div>
     </section> <!-- Main Nav Section Ends -->
 
-  </main>
+  </main><!-- Main section ends -->
 
   <!-- FOOTER  -->
   <footer class="footer">
     <div class="wrapper">
-
+      <!-- Info Section  -->
       <section class="footer__info clearfix">
+
+        <!-- Email Section -->
         <ul class="footer__list footer__list--email">
           <li>
             <h3 class="footer__heading">Stay Updated</h3>
@@ -201,12 +197,16 @@
           </li>
           <li>
             <label for="email">
-              <input type="text" id="email" class="footer__input--email" name="email" placeholder="email address">
+              <input 
+                type="text" 
+                id="email" class="footer__input--email" name="email" 
+                placeholder="email address">
             </label>
             <button type="submit" class="footer__button--email">Subscribe</button>
           </li>
         </ul>
-      
+
+        <!-- Contact Section -->
         <ul class="footer__list footer__list--contact">
           <li>
             <h3 class="footer__heading footer__heading--contact">Contact</h3>
@@ -228,7 +228,8 @@
             <p class="footer__para footer__para--contact">A5A 5A5, Canada</p>
           </li>
         </ul>
-      
+
+        <!-- Navigation Section -->
         <nav>
           <ul class="footer__list footer__list--nav">
             <li><a class="footer__link" href="">Home</a></li>
@@ -237,13 +238,14 @@
             <li><a class="footer__link" href="">Contact</a></li>
           </ul>
         </nav>
-      
-      </section>
+      </section><!-- Info Section Ends -->
       
     </div> <!-- wrapper ends -->
+
+      <!-- Copyright Section  -->
       <section class="copyright__container">
         <p class="copyright__para">Copyright &copy; 2019 HackerYou</p>
-      </section>
+      </section><!-- Copyright Ends -->
     
   </footer>
 
