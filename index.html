@@ -34,6 +34,11 @@
               <a class="header__link" href="">Contact</a>
             </li>
           </ul>
+          <ul class="header__nav-hamburger">
+            <li class="header__list--hamburger">
+              <i class="header__hamburger fas fa-bars"></i>
+            </li>
+          </ul>
       </nav>
       <!-- Title  -->
       <div class="header__heading-container">
@@ -45,7 +50,7 @@
 
       <!-- Social Media Navigation -->
       <nav class="header__side-nav clearfix">
-        <ul>
+        <ul class="header__nav-icons">
           <li><i class="fab fa-instagram header__icon" aria-label="instagram"></i></li>
           <li><i class="fab fa-facebook-f header__icon" aria-label="facebook"></i></li>
           <li><i class="fab fa-snapchat-ghost header__icon" aria-label="snapchat"></i></li>
@@ -72,12 +77,12 @@
         <!-- Blog 1 -->
         <article class="blog__article-one clearfix">
           <div class="blog__img-container blog__img-container--one">
-            <img src="./assets/image-6@2x.png" alt="front-view of a silver car with a yellow stripe vertically stretching up the hood">
+            <img class="blog__img" src="./assets/image-6@2x.png" alt="front-view of a silver car with a yellow stripe vertically stretching up the hood">
           </div>
           <div class="blog__text-container blog__text-container--one">
-            <div class="blog__text-subContainer--one">
+            <div class="blog__text-subcontainer--one">
 
-              <h2 class="blog__heading blog__heading--one">This Weeks Highlight</h2>
+              <h2 class="blog__heading blog__heading--one">This Week's Highlight</h2>
               <p class="blog__para blog__para--one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, vero quam esse quaerat est beatae ducimus placeat fugiat debitis optio neque molestiae minima reprehenderit hic dolorem culpa nobis iure odio eos? Aperiam eaque velit nesciunt animi odit dicta veniam officiis dolor? Modi vero distinctio molestias possimus repudiandae odit provident alias, facere iste, molestiae sapiente, deserunt eveniet. Obcaecati expedita odit placeat fuga dolores architecto doloremque eveniet reprehenderit at, ea velit dignissimos reiciendis assumenda mollitia sint soluta culpa quae non itaque molestiae id cumque dolorum veritatis dolore!</p>
               <button class="blog__button blog__button--one">Read More</button>
             </div>
@@ -91,17 +96,21 @@
       
         <article class="blog__article-two clearfix">
           <div class="blog__img-container blog__img-container--two">
-            <img src="./assets/image-2@2x.png" alt="white sports car with two identical blue stripes stretching over the car">
+            <img 
+              class="blog__img blog__img--two" 
+              src="./assets/image-2@2x.png" alt="white sports car with two identical blue stripes stretching over the car"
+            >
           </div>
 
 
           <div class="blog__text-container blog__text-container--two">
             <div class="blog__text-subcontainer blog__text-subcontainer--two">
-
-              <h2 class="blog__heading">New Models To</h2>
-              <h2 class="blog__heading">Look Into It</h2>
+              <div class="blog__heading-container">
+                <h2 class="blog__heading">New Models To</h2>
+                <h2 class="blog__heading">Look Into It</h2>
+              </div>
               <p class="blog__para blog__para--two">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, rerum ipsum dolore accusamus, fugit voluptates expedita repudiandae dolorem modi praesentium cum quia exercitationem illum culpa distinctio. Dicta provident perferendis tempora eius excepturi. Quam, labore blanditiis fuga nemo hic quis nihil.</p>
-              <button class="blog__button">Read More</button>
+              <button class="blog__button blog__button--two">Read More</button>
             </div>
           </div>
         
@@ -112,16 +121,21 @@
         <article class="blog__article-three clearfix">
           <!-- Image Container Three  -->
           <div class="blog__img-container blog__img-container--three">
-            <img src="./assets/image-2-copy@2x.png"
-              alt="close-up of white sports car in dimly lit warehouse, with other cars faintly visible in the background">
+            <img 
+              class="blog__img blog__img--two" 
+              src="./assets/image-2-copy@2x.png"
+              alt="close-up of white sports car in dimly lit warehouse, with other cars faintly visible in the background"
+            >
           </div>
           <!-- Text Container Three  -->
           <div class="blog__text-container blog__text-container--three">
             <div class="blog__text-subcontainer blog__text-subcontainer--three">
-              <h2 class="blog__heading">Drive In The Style</h2>
-              <h2 class="blog__heading">In The Night</h2>
+              <div class="blog__heading-container">
+                <h2 class="blog__heading">Drive In The Style</h2>
+                <h2 class="blog__heading">In The Night</h2>
+              </div>
               <p class="blog__para blog__para--three">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus odio laboriosam modi quisquam quasi, necessitatibus assumenda possimus provident? Placeat, quidem! Similique numquam qui beatae sequi harum voluptates illum facere error exercitationem. Eum illum voluptatem eveniet excepturi consequuntur repudiandae, odio omnis?</p>
-              <button class="blog__button">Read More</button>
+              <button class="blog__button blog__button--three">Read More</button>
             </div>
           </div>
           
@@ -167,7 +181,7 @@
             <h3 class="footer__heading">Stay Updated</h3>
           </li>
           <li>
-            <p class="footer__para--email">Subscribe to our newsletter to stay updated</p>
+            <p class="footer__para footer__para--email">Subscribe to our newsletter to stay updated</p>
           </li>
           <li>
             <label for="email">
@@ -182,7 +196,7 @@
             <h3 class="footer__heading footer__heading--contact">Contact</h3>
           </li>
           <li>
-            <p class="footer__para--contact">
+            <p class="footer__para footer__para--contact">
               <span class="footer__contact-info">
                 info@email.com |
               </span> 
@@ -192,10 +206,10 @@
             </p>
           </li>
           <li>
-            <p class="footer__para--contact">123 some road, Toronto, ON</p>
+            <p class="footer__para footer__para--contact">123 some road, Toronto, ON</p>
           </li>
           <li>
-            <p class="footer__para--contact">A5A 5A5, Canada</p>
+            <p class="footer__para footer__para--contact">A5A 5A5, Canada</p>
           </li>
         </ul>
       

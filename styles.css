@@ -105,13 +105,17 @@ a {
 .header__nav-page {
     float: left;
     width: 40%;
-    text-align: right;
 }
 
+/* (Tried to make this a width of 25%, but was having lots of issues with getting equal spacing.) */
 /* List items within nav-page */
 .header__list--page {
     float: left;
-    width: 25%;
+    
+}
+
+.header__list--hamburger {
+    display: none;
 }
 
 /* Anchor tags within list items */
@@ -140,6 +144,7 @@ a {
     color: var(--lipstick);
     line-height: 97px;
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .header__subheading {
@@ -178,7 +183,7 @@ a {
 }
 
 .blog__heading--top {
-    margin: 75px 0;
+    margin: 50px 0;
     text-align: center;
 }
 
@@ -200,6 +205,11 @@ a {
 }
 
 /* Blog Articles  */
+
+.blog__para {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
 
 .blog__button {
     font-family: 'Kanit', sans-serif;
@@ -240,9 +250,6 @@ a {
     padding: 0 0 0 30px;
 }
 
-.blog__heading--one {
-
-}
 
 .blog__para--one {
     line-height: 25px;
@@ -370,7 +377,7 @@ a {
 }
 
 .footer__info {
-    height: 47vh;
+    height: 250px;
 }
 
 .footer__heading {
@@ -449,14 +456,11 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
 }
 
 @media (max-width: 1350px) {
     /* Blog */
-
-    .blog__heading {
-        font-size: 3rem;
-    }
 
     .blog__para {
         font-size: 1.6rem;
@@ -476,7 +480,7 @@ a {
 
 }
 
-@media (max-width: 1105px) {
+@media (max-width: 1160px) {
     .blog__img-container--one {
         float: none;
         width: 60%;
@@ -490,20 +494,59 @@ a {
         width: 60%;
     }
 
-    .blog__text-subContainer--one {
+    .blog__heading--one {
+        margin: 20px 0;
+    }
+
+    .blog__text-subcontainer--one {
         padding: 0;
+    }
+
+    .blog__article-two {
+        margin: 30px 0 0 0;
+    }
+
+    .blog__text-subcontainer--two,
+    .blog__text-subcontainer--three {
+        padding: 0 10px;
+    }
+
+    .blog__para {
+        font-size: 1.8rem;
+    }
+
+    .blog__button--one {
+        margin: 20px 0 0 0;
+        padding: 15px 30px;
+    }
+
+    .blog__button--two, 
+    .blog__button--three {
+        margin: 10px 0 50px 0;
     }
 }
 
 @media (max-width: 950px) {
     
-
+    .header__heading {
+        font-size: 8rem;
+        line-height: 64px;
+    }
 
     /* This wrapper has been inactive until this breakpoint */
     .blog__wrapper {
         max-width: 1200px;
         margin: 0 auto;
         width: 90%;
+    }
+    
+    .blog__heading-container {
+        margin: 45px 0 0 0;
+    }
+
+    .blog__heading {
+        font-size: 3rem;
+        line-height: 30px;
     }
 
     .blog__text-container--two, 
@@ -531,6 +574,50 @@ a {
 }
 
 @media (max-width: 650px) {
+
+    .header__nav-title {
+        width: 30%;
+    }
+
+    .header__nav-page {
+        width: 70%;
+    }
+
+    .header__link {
+        font-size: 1.8rem;
+    }
+
+    .header__heading {
+        font-size: 6rem;
+        line-height: 50px;
+    }
+
+    .blog__heading--top {
+        margin: 35px;
+    }
+
+    .blog__list:nth-child(1),
+    .blog__list:nth-child(2) {
+        width: calc(50% - 15px);
+    }
+
+    .blog__list:nth-child(2) {
+        margin: 0 0 0 15px;
+    }
+
+    .blog__list:nth-child(3) {
+        display: none;
+    }
+
+    /* Blog - Article One  */
+    .blog__img-container--one, 
+    .blog__text-container--one {
+        width: 100%;
+    }
+
+    
+    
+    /* Blog - Article Two & Three  */
     .blog__text-container--two, 
     .blog__text-container--three,
     .blog__img-container--two,
@@ -538,4 +625,108 @@ a {
         width: 100%;
     }
 
+    /* Footer  */
+
+    .footer__info {
+        height: auto;
+    }
+
+    .footer__list {
+        margin: 0;
+    }
+
+    .footer__list--email {
+        width: 100%;
+        text-align: center;
+        padding: 50px 0 0 0;
+    }
+
+    .footer__input--email,
+    .footer__button--email {
+        display: block;
+        width: 100%;
+        padding: 12px 0;
+    }
+
+    .footer__input--email {
+        text-align: center;
+        margin: 0 0 10px 0;
+        font-size: 1.6rem;
+    }
+
+
+    .footer__list--contact,
+    .footer__list--nav {
+        width: 50%;
+        padding: 30px 0 30px 0;
+    }
+
+    .footer__para {
+        font-size: 1.4rem;
+        line-height: 20px;
+    }
+
+    .footer__para--email {
+        padding: 10px 0;
+    }
+
+    .copyright__para {
+        font-size: 1.6rem;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .header__nav-title,
+    .header__nav-page,
+    .header__nav-icons {
+        display: none;
+    }
+
+    .header__nav-page {
+        text-align: right;
+    }
+
+    .header__list--hamburger {
+        display: block;
+        text-align: right;
+    }
+
+    .header__hamburger {
+        font-size: 3rem;
+        padding: 10px;
+    }
+
+    .header__heading {
+        font-size: 4rem;
+        line-height: 36px;
+    }
+
+    .header__subheading {
+        font-size: 1.6rem;
+    }
+
+    .blog__heading {
+        font-size: 2.6rem;
+    }
+
+    .blog__heading--top {
+        margin: 30px 0;
+    }
+
+    /* CROP IMAGES HERE  */
+
+    .main-nav {
+        height: auto;
+    }
+
+    .main-nav__list-container {
+        padding: 0;
+    }
+
+    .main-nav__list {
+        float: none;
+        width: auto;
+        padding: 15px 0;
+    }
 }
