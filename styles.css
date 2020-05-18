@@ -129,6 +129,13 @@ a {
     text-transform: uppercase;
 }
 
+.header__link:hover,
+.header__link:focus,
+.header__icon:hover,
+.header__icon:focus {
+    opacity: 0.5;
+}
+
 /* Heading  */
 
 .header__heading-container {
@@ -159,12 +166,14 @@ a {
 
 .header__side-nav {
     position: absolute;
-    bottom: 2%;
+    bottom: 8%;
     right: 2%;
 }
 
-.header__icon {
-    padding: 10px;
+.header__link--icon {
+    color: white;
+    display: inline-block;
+    padding: 6px;
 }
 
 
@@ -224,6 +233,11 @@ a {
     text-transform: uppercase;
 }
 
+.blog__button:hover,
+.blog__button:focus {
+    background: var(--wine-red);
+}
+
 /* Article One  */
 
 .blog__article-one {
@@ -246,7 +260,7 @@ a {
     right: 0;
 }
 
-.blog__text-subContainer--one {
+.blog__text-subcontainer--one {
     padding: 0 0 0 30px;
 }
 
@@ -336,17 +350,17 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 47vh;
 }
 
 .main-nav__list-container {
-    padding: 120px 0 0 0;
+    /* padding: 120px 0 0 0; */
 }
 
 .main-nav__list {
     float: left;
     width: 33%;
     text-align: center;
+    padding: 90px 0;
 }
 
 .main-nav__icon {
@@ -363,6 +377,11 @@ a {
     line-height: 29px;
     color: white;  
     display: block;
+}
+
+.main-nav__link:hover,
+.main-nav__link:focus {
+    opacity: 0.5;
 }
 
 
@@ -418,6 +437,11 @@ a {
     text-transform: uppercase;
 }
 
+.footer__button--email:hover,
+.footer__button--email:focus {
+    background: var(--lipstick);
+}
+
 .footer__list--contact {
     width: 30%;
 }
@@ -442,6 +466,11 @@ a {
     font-weight: bold;
     font-style: italic;
     line-height: 29px;
+}
+
+.footer__link:hover,
+.footer__link:focus {
+    opacity: 0.5;
 }
 
 .copyright__container {
@@ -474,8 +503,13 @@ a {
         margin-bottom: 0;
     }
 
-    .blog__text-subcontainer {
+    .blog__text-subcontainer--one {
         padding: 0 60px;
+    }
+
+    .blog__text-subcontainer--two,
+    .blog__text-subcontainer--three {
+        padding: 20px 10px 0 10px;
     }
 
 }
@@ -508,7 +542,7 @@ a {
 
     .blog__text-subcontainer--two,
     .blog__text-subcontainer--three {
-        padding: 0 10px;
+        padding: 20px 10px 0 10px;
     }
 
     .blog__para {
@@ -541,7 +575,7 @@ a {
     }
     
     .blog__heading-container {
-        margin: 45px 0 0 0;
+        margin: 20px 0 0 0;
     }
 
     .blog__heading {
@@ -714,8 +748,10 @@ a {
         margin: 30px 0;
     }
 
-    /* CROP IMAGES HERE  */
-
+    .blog__wrapper {
+        width: 100%;
+    }
+    
     .main-nav {
         height: auto;
     }
@@ -728,5 +764,34 @@ a {
         float: none;
         width: auto;
         padding: 15px 0;
+    }
+}
+
+@media (max-width: 330px) {
+    
+    
+    /* The following is to crop to the images in Blog 2 and 3.  I'm able to get the effect in responsive-design mode (in firefox), but below 330px in desktop, it doesn't seem to respond.    */
+
+    .blog__img--two,
+    .blog__img--three {
+        display: none;
+    }
+
+    .blog__img-container--two,
+    .blog__img-container--three {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .blog__img-container--two {
+        background-image: url(./assets/image-2@2x.png);
+        height: 210px;
+        margin: -40px 0 0 0;
+    }
+
+    .blog__img-container--three {
+        background-image: url(./assets/image-2-copy@2x.png);
+        height: 205px;
+        margin: -65px 0 0 0;
     }
 }
