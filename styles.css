@@ -111,7 +111,6 @@ a {
     width: 40%;
 }
 
-/* (Tried to make this a width of 25%, but was having lots of issues with getting equal spacing.) */
 /* List items within nav-page */
 .header__list--page {
     float: left;
@@ -247,7 +246,6 @@ a {
 .blog__article-one {
     margin: 80px 0 0 0;
     position: relative;
-    /* overflow: hidden; */
 }
 
 .blog__img-container--one {
@@ -274,10 +272,6 @@ a {
     margin: 10px 0 60px 0;
 }
 
-.blog__button--one {
-
-}
-
 /* https://stackoverflow.com/questions/4804581/css-expand-float-child-div-height-to-parents-height */
 /* This Stack Overflow thread provided me guidance for making two floated elements the same height as their parent. */
 
@@ -288,7 +282,6 @@ a {
     position: relative;
     overflow: hidden;
 }
-
 
 .blog__text-container--two {
     float: left;
@@ -411,7 +404,6 @@ a {
 .footer__list {
     float: left;
     margin: 45px 0 0 0;
-    /* width: 30%; */
 }
 
 .footer__list--email {
@@ -652,8 +644,6 @@ a {
         width: 100%;
     }
 
-    
-    
     /* Blog - Article Two & Three  */
     .blog__text-container--two, 
     .blog__text-container--three,
